@@ -39,24 +39,34 @@
 						<h2 class="align-center" style="margin-bottom: 2em;">Get in touch</h2>
 						<div class="grid-style">
 							<div class="form-container">
-								<form method="post" action="#">
+								<form action="https://api.web3forms.com/submit" method="POST">
+
+									<!-- Replace with your Access Key -->
+									<input type="hidden" name="access_key" value="c5f8485a-734d-4f1c-af67-0105df5bb97f">
+								
+									<!-- Form Inputs. Each input must have a name="" attribute -->
 									<div class="fields">
 										<div class="field">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" value="" />
+											<input type="text" name="name" required>
 										</div>
 										<div class="field">
 											<label for="email">Email</label>
-											<input type="email" name="email" id="email" value="" />
+											<input type="email" name="email" required>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<textarea name="message" required></textarea>
 										</div>
 									</div>
+								
+									<!-- Honeypot Spam Protection -->
+									<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+								
 									<ul class="actions special">
-										<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+										<li><button type="submit">Send Message</button></li>
 									</ul>
+								
 								</form>
 							</div>
 							<div class="contact-info">
@@ -81,7 +91,7 @@
 				<!-- Calendly badge widget begin -->
 				<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 				<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-				<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/hemasathish-radiantcollegeguidance', text: 'Schedule time with me', color: '#4e96ff', textColor: '#ffffff', branding: true }); }</script>
+				<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/hemasathish-radiantcollegeguidance', text: 'Schedule a Meeting', color: '#4e96ff', textColor: '#ffffff', branding: true }); }</script>
 				<!-- Calendly badge widget end -->
 
 				<!-- Footer -->
